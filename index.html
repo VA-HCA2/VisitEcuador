@@ -1,47 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-        <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <img src="images/logo.png" alt="logo">
-                        <a class="navbar-brand" href="#">Visit Ecuador</a>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Register</a>
-                            </li>
-                            <li class="nav-item">
-                               <a class="nav-link" href="#">Itinerary</a>
-                             </li>
-                          </ul>
-                          <a class="btn btn-outline-primary" href="#">Login</a>
-                        </div>
-                      </nav>    
-        </header>
-    <h1>Hello, world!</h1>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>VisitEcuador.com</title>
+</head>
+
+<body>
+
+  <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <img src="images/logo.png" alt="logo">
+    <h1 class="my-0 mr-md-auto font-weight-normal">VisitEcuador.com</h1>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="index.html">Home</a>
+      <a class="p-2 text-dark" href="about.html">About</a>
+      <a class="p-2 text-dark" href="information.html">Itinerary</a>
+      <a class="p-2 text-dark" href="registration.html">Register</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="login.html">Login</a>
+  </header>
+
+  <main>
+    <section class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Ecuador</h1>
+      <p class="lead">A destination you must visit </p>
+    </section>
+
+    <img id="homeimg" src="images/homeimage.png" alt="pictures of Ecuador">
+    <br>
+    <h1 id="title"> Reasons to visit Ecuador...</h1>
+
+    <!-- Divs to create paragraphs -->
+    <section class="row no-gutters">
+      <aside class="col-md-4 left"> <img class="img1" img src="images/middle.png" alt="Middle of the world monument" />
+
+      </aside>
+      <article class="col-md-4 mr-md-auto center">
+        <h3>Middle of the world</h3>
+        <p>
+          Ecuador is lucky enough to be located in the middle of the world, a very privilaged area. This geogaphical
+          feature allows the phenomenon of gravity to be exerted with less force in Quito; meaning that,here the bodies
+          weight slightly less
+          than other places around the world. </p>
+      </article>
+    </section>
+    <section class="row">
+      <aside class="col-md-4 ml-md-auto center"> <img class="img1"src="images/galapagos.png" alt="Turtle" />
+      </aside>
+      <article class="col-md-4 right">
+        <h3>Galapagos Island</h3>
+        <p>The great biodiversity and wildlife found in the
+          Galapagos islands is so unique that Darwin raised the Theory of Evolution based on it.
+        </p>
+      </article>
+    </section>
+
+    <section class="row">
+
+      <aside class="col-md-4 left"> <img class= "img1" img src="images/chimborazo.png" alt="Mountain" />
+      </aside>
+
+      <article class="col-md-4 mr-md-auto center">
+        <h3>Chimborazo Mountain</h3>
+        <p>
+          In the providence of Chimborazo stands the amazing Chimborazo volcano. At 6268 m in height, this colossus is
+          the closest point from Earth to the Sun.
+        </p>
+      </article>
+    </section>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
