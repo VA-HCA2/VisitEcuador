@@ -100,6 +100,15 @@
   border-color: rgb(61, 114, 163);
   padding: 12px 20px;
 } 
-
-.view{ background-color: chartreuse;
-margin-top: 5%;}
+ 
+.list {
+  margin-left: 3%;
+  float:left; 
+  width: 49%;
+  padding: 20px;
+;}
+   .cards { background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightseagreen}
+     
