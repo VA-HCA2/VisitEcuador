@@ -1,4 +1,18 @@
-/* Starts Index  css */
+/*Apllies to all of them*/
+
+h1, h2 {
+  color: rgb(53, 172, 126);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navtitle {
+  color: rgb(43, 109, 41);
+  font-size: 30px
+}
+
+/* This styles apply to my Index page */
 
 #homeimg {
   display: block;
@@ -11,47 +25,27 @@
   height: 50%
 }
 
-#title {
-  text-align-last: center;
-}
 
 .img1 {
   border-radius: 10%
 }
 
-.display-4 {
+#indextitle { 
   font-weight: bold;
   color: rgb(28, 59, 28);
-  font-size: 65px;
-  font-family: Helvetica
+  font-size: 49px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-.row {
-  padding: 5%;
-  text-align: justify;
-  width: 100%;
-}
-
-.lead {
-  font-size: 30px
-}
-
-/* Starts Longin CSS */
+ .indexp{ color:rgb(129, 157, 167)}
+/* This styles apply to my Login page */
 
 #account {
   text-align: center
 }
 
-#hr {
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 3%;
-  border-width: 3px;
-}
-
 .Signin {
   margin-top: 30%;
-  padding:5%;
+  padding: 5%;
   border-radius: 20px;
   border-style: solid;
   border-color: rgb(127, 197, 197);
@@ -78,37 +72,34 @@
   margin-bottom: 10px;
 }
 
-/* Starts Information CSS*/
+/* This styles apply to my Information page*/
 
-.infotitle {
-  font-size: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  border-color: rgb(55, 92, 92);
-  border-style: solid;
-}
-
-.table { border-radius: 25px;
-  margin-top: 15%;
- }
-  h1,h2{ color: rgb(60, 120, 175);
-   font-size: 20px;
-  }
- .Itinerary {
+.Itinerary {
   border-radius: 10px;
   border-style: solid;
   border-color: rgb(61, 114, 163);
   padding: 12px 20px;
-} 
- 
-.list {
-  margin-left: 3%;
-  float:left; 
-  width: 49%;
-  padding: 20px;
-;}
-   .cards { background-color: white;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: lightseagreen}
-     
+}
+
+.cards {
+  background-color: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: lightseagreen;
+}
+
+th {
+  color: rgb(56, 146, 56)
+}
+
+/*Apllies to About page*/
+
+.row {
+  padding: 5%;
+  text-align: justify;
+  width: 100%;
+}
+
+.lead {
+  font-size: 30px
+}
