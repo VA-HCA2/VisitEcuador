@@ -30,13 +30,10 @@ h1, h2 {
   border-radius: 10%
 }
 
-#indextitle { 
-  font-weight: bold;
-  color: rgb(28, 59, 28);
-  font-size: 49px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.indextitle { font-size: 40px;
+  font-family:'Averia Libre';
 }
- .indexp{ color:rgb(129, 157, 167)}
+ .indexp{ color:rgb(167, 129, 147)}
 /* This styles apply to my Login page */
 
 #account {
@@ -103,3 +100,18 @@ th {
 .lead {
   font-size: 30px
 }
+
+.abouttitle{ color: blueviolet;
+  font-family: 'Averia Libre';font-size: 22px;
+
+}
+/*
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here 
+  line-height: 60px; /* Vertically center the text there 
+  background-color: pink;
+}
+
