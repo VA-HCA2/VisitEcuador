@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">  
   <link href='https://fonts.googleapis.com/css?family=AveriaLibre' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
   <title>VisitEcuador.com</title>
@@ -18,7 +19,7 @@
 
   <nav class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <img src="images/logo.png" alt="logo">
-    <h1 class="navtitle font-weight-bold my-0 mr-md-auto font-weight-normal">VisitEcuador.com</h1>
+    <a class="text-decoration-none my-0 mr-md-auto navtitle " href="index.html">VisitEcuador.com</a>
     <div class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="index.html">Home</a>
       <a class="p-2 text-dark" href="about.html">About</a>
@@ -26,10 +27,10 @@
     </div>
     <a class="btn btn-outline-primary" href="login.html">Sign out</a>
   </nav>
-  <!--Manage Itineraries Accordion to manage list delete or add -->
-  <main class="container ">
+  <main class="container">
     <section class="row">
       <div class="col-md-4 ">
+        <!--Manage Itineraries Accordion to manage list delete -->
         <h1 class="infotitle" > Manage Itineraries</h1>
         <div class="accordion " id="accordionExample">
           <div class="card cards">
@@ -41,7 +42,7 @@
                 </button>
               </h2>
             </div>
-            <!--With Java once I click the save button all the information should go directly to the Manage Itineraries-->
+            <!--With Java once I click the save button in the table all the information should go directly to the Manage Itineraries-->
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body list-group-flush">
                 <ul class="list-group">
@@ -50,6 +51,7 @@
                   <li class="list-group-item list-group-item-light">Budget: $3,000</li>
                   <li class="list-group-item list-group-item-light">Kids: Yes</li>
                 </ul>
+                <!--All the delete buttons from this accordion are not in Modal for esthetic purposes-->
                 <button type="button" class="btn btn-outline-danger">Delete</button>
               </div>
             </div>
@@ -92,7 +94,6 @@
                   <li class="list-group-item list-group-item-light">Budget: $3,000</li>
                   <li class="list-group-item list-group-item-light">Kids: Yes</li>
                 </ul>
-                <button type="button" class="btn btn-outline-danger">Delete</button>
               </div>
             </div>
           </div>
@@ -101,16 +102,18 @@
 
       <!--Create itineary colum 2 -->
       <section class="col-md-6 offset-md-2 s">
+        <!--Start of form-->
         <form>
           <h1 class="text-center infotitle">Create Itinerary</h1>
           <div class="form-group">
             <label for="TextInput">Itinerary</label>
-            <input type="text" id="TextInput" class="form-control" placeholder="Name">
+            <input type="text" id="TextInput" class="form-control" placeholder="Name" required autocomplete="off">
           </div>
 
           <div class="form-group">
             <label for="Select">Month</label>
-            <select id="Select" class="form-control">
+            <select id="Select" class="form-control" required>  
+             <option value="" disabled selected>Select Month
               <option>January</option>
               <option>February</option>
               <option>March</option>
@@ -157,14 +160,14 @@
               <th scope="col">Month</th>
               <th scope="col">Days</th>
               <th scope="col">Budget</th>
-              <th scope="col">Kids</th>
-              <th scope="col"></th>
-              <!--need to check this !!!!! -->
-              <th><button type="button" class="btn btn-outline-info">Print</button> </th>
+              <th scope="col" colspan="2">Kids</th>
+         <!--Print any Itinerary that has been created-->     
+              <th><button type="button" class="btn btn-outline-info">Print</button></th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <!--Itinerary 1 from table-->
               <th scope="row">1</th>
               <td>Itin. 1 </td>
               <td>January</td>
@@ -175,7 +178,7 @@
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                   Edit
                 </button>
-                <!-- Modal -->
+                <!-- Modal edit for itinerary 1-->
                 <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -203,7 +206,7 @@
                   Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal delete for itinerary 1-->
                 <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -225,10 +228,8 @@
                   </div>
                 </div>
               </td>
-
-
-
             </tr>
+            <!--Itinerary 2 from table-->
             <tr>
               <th scope="row">2</th>
               <td>Itin. 2</td>
@@ -240,7 +241,7 @@
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                   Edit
                 </button>
-                <!-- Modal -->
+                <!-- Modal edit for itinerary 2-->
                 <div class="modal exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -268,7 +269,7 @@
                   Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal delete for itinerary 2 -->
                 <div class="modal exampleModalCentered" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -292,6 +293,7 @@
               </td>
             </tr>
             <tr>
+              <!--Itinerary 3 from table-->
               <th scope="row">3</th>
               <td>Itin.3</td>
               <td colspan="2">June</td>
@@ -301,7 +303,7 @@
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                   Edit
                 </button>
-                <!-- Modal -->
+                <!-- Modal edit for itinerary 3-->
                 <div class="modal exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -329,7 +331,7 @@
                   Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal edit for itineary 3-->
                 <div class="modal exampleModalCentered" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -353,6 +355,7 @@
               </td>
             </tr>
             <tr>
+              <!--Itinerary 4 from table-->
               <th scope="row">4</th>
               <td>Itin. 4</td>
               <td>October</td>
@@ -363,7 +366,7 @@
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                   Edit
                 </button>
-                <!-- Modal -->
+                <!-- Modal Edit for itinerary 4-->
                 <div class="modal exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -391,7 +394,7 @@
                   Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal delete for itinerary 4-->
                 <div class="modal exampleModalCentered" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -414,7 +417,7 @@
                 </div>
               </td>
             </tr>
-
+        <!--Itinerary 5 from table-->
             <tr>
               <th scope="row">5</th>
               <td> Itin. 5</td>
@@ -425,7 +428,7 @@
                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#exampleModal">
                   Edit
                 </button>
-                <!-- Modal -->
+                <!-- Modal edit itinerary 5-->
                 <div class="modal exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -453,7 +456,7 @@
                   Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal delelete itinerary 5-->
                 <div class="modal exampleModalCentered" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -484,7 +487,7 @@
           Save
         </button>
 
-        <!-- Modal -->
+        <!-- Modal for save-->
         <div class="modal"  id="exampleModal3" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -507,7 +510,10 @@
       </section>
     </section>
   </main>
-
+  <footer class="footer">
+      The content of this page is for Educational purposes only. Images and Content have been colected from different sites.
+    </footer>
+    
   <!-- Optional JavaScript -->
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

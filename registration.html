@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Averia+Libre&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="css/style.css">
     <title>VisitEcuador.com</title>
@@ -16,7 +17,7 @@
 <body>
 <nav class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <img src="images/logo.png" alt="logo">
-    <h1 class="navtitle font-weight-bold my-0 mr-md-auto font-weight-normal">VisitEcuador.com</h1>
+    <a class="text-decoration-none my-0 mr-md-auto navtitle " href="index.html">VisitEcuador.com</a>
     <div class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="index.html">Home</a>
         <a class="p-2 text-dark" href="about.html">About</a>
@@ -55,7 +56,8 @@
             </div>
             <div class="form-group">
                 <label for="Select">How did you hear about us?</label>
-                <select id="Select" class="form-control">
+                <select id="Select" class="form-control" required>
+                    <option value="" disabled selected>Please select...
                     <option>Facebook Page</option>
                     <option>Blog Post</option>
                     <option>Another Client</option>
@@ -73,7 +75,10 @@
         </form>
     </section>
 </Main>
-
+<footer class="footer">
+        The content of this page is for Educational purposes only. Images and Content have been colected from different sites.
+      </footer>
+      
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -84,3 +89,4 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
     </body>
+    </html>
