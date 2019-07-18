@@ -9,8 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <title>VisitEcuador.com</title>
 </head>
 
@@ -26,10 +27,10 @@
     <a class="btn btn-outline-primary" href="login.html">Login</a>
   </nav>
   <!-- Start of form-->
-  <Main class="col-md-4 offset-4">
-    <!--<form class="form-signin Signin text-center" action="information.html" autocomplete="off" method="POST"> -->
-    <form class="form-signin Signin text-center" action="information.html" autocomplete="off" method="GET">
-      <img class="mb-4" src="images/username.png" alt=" username image" width="72" height="72">
+  <Main class="col-md-4 offset-md-4 center text-center Signin">
+    <!--<form class="form-signin text-center" action="information.html" autocomplete="off" method="POST">-->
+    <form class="form-signin text-center " action="information.html" autocomplete="off" method="GET">
+      <img class="mb-4" src="images/username.png" alt=" username image">
       <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -42,12 +43,11 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit" value="Go to information">Login</button>
+      <p>Don't have an account? <a href="registration.html"> Register</a> </p>
     </form>
-    <br>
-    <p id="account">Don't have an account? <a href="registration.html"> Register</a> </p>
   </Main>
   <!--Footer-->
-  <footer class="footer">
+  <footer class="footer text-center">
     The content of this page is for Educational purposes only. Images and Content have been colected from different
     sites.
   </footer>
